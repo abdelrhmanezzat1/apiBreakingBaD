@@ -1,0 +1,144 @@
+$back-color-header: #f0f3f4;
+$font-color: #85c1e9;
+$fw: bold;
+$F-W-H: 800;
+$fs: 30px;
+$fs-link: 18px;
+$F-F-L: "cairo", Regular;
+$F-W-L: 600;
+$F-f: "Cairo", sans-serif;
+$F-F-H: "Cairo", bold;
+$contol-hieght: 50px;
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $F-f;
+}
+
+.conteainr {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1170px;
+}
+#na {
+  background-color: $back-color-header;
+  color: #85c1e9;
+  #na2 {
+    color: #85c1e9;
+
+    a {
+      color: #85c1e9;
+      font-family: $F-F-L;
+      font-weight: $fw;
+      font-size: $fs-link;
+    }
+  }
+  .btn {
+    outline: $font-color;
+    color: $font-color;
+    font-weight: bold;
+    font-size: $fs-link;
+  }
+}
+.alllaeding {
+  background-image: url(./img/walter-white-in-breaking-bad-y8.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .conteainr {
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+    /* backdrop-filter: saturate(1.7)brightness(.6)blur(3px); */
+    backdrop-filter: grayscale(1.9) saturate(0.8) blur(2px) contrast(1.1);
+    background-color: #00000045;
+    position: relative;
+    padding: 15px;
+
+    #selt {
+      // position: absolute;
+      // margin-top: 25px;
+      // left: 50%;
+      // transform: translateX(-50%);
+      transition: 0.5s;
+      background-color: #f0f3f488;
+      color: #1a5276;
+      font-weight: $fw;
+      option {
+        font-size: $fs-link;
+        font-weight: $fw;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .conteainr {
+      backdrop-filter: saturate(1) brightness(0.8) blur(2px);
+      background: transparent;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .alllaeding {
+    background-image: url(./img/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+#data {
+  color: #1b4f72;
+  background-color: #f0f3f488;
+  margin-top: 25px;
+  display: grid;
+  width: 700px;
+  grid-template-columns: repe;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 35px;
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+  line-height: 1.5;
+
+  text-align: center;
+  h3 {
+    font-family: $F-F-H;
+  }
+  div {
+    margin-top: 50px;
+    line-height: 2;
+  }
+  #fake {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  li {
+    list-style: none;
+    font-size: $fs-link;
+    font-weight: $fw;
+    font-family: $F-f;
+  }
+}
+
+@media (max-width: 767px) {
+  #data {
+    width: fit-content;
+    margin: 25px 9px;
+    right: 0;
+    position: relative;
+    div {
+      margin: 0;
+    }
+  }
+}
